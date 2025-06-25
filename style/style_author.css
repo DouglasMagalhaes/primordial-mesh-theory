@@ -1,74 +1,94 @@
 /* style/style_author.css */
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9f9f9;
-    color: #333;
+    color: #1a1a1a;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #1e1e1e;
-    color: white;
-    padding: 20px;
+    background-color: #222;
+    color: #f2f2f2;
     text-align: center;
-    font-size: 24px;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 nav {
-    background-color: #444;
-    padding: 10px;
-    text-align: center;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+    gap: 2rem;
 }
 
 nav a {
-    color: white;
+    color: #f0f0f0;
     text-decoration: none;
-    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.2s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ffd700;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 0 20px;
-    gap: 30px;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
 }
 
 .biografia {
-    flex: 3;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.biografia .titulo {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    border-left: 5px solid #444;
+    padding-left: 1rem;
+    color: #333;
 }
 
 .biografia p {
-    line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     text-align: justify;
 }
 
-.titulo {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
 .sidebar {
-    flex: 1;
-    background-color: #eee;
-    padding: 20px;
+    background-color: #f4f4f4;
+    padding: 1.5rem;
     border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .sidebar h3 {
     margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #222;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.sidebar p {
+    margin: 0.5rem 0;
 }
 
 .sidebar a {
-    color: #0066cc;
+    color: #007acc;
     text-decoration: none;
 }
 
@@ -78,9 +98,9 @@ nav a:hover {
 
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    background-color: #1e1e1e;
-    color: white;
-    font-size: 14px;
+    padding: 1rem;
+    background-color: #222;
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 2rem;
 }
